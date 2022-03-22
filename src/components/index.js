@@ -1,3 +1,4 @@
 import Nav from './Nav'
+import Jumbotron from './Jumbotron'
 
-export { Nav }
+export { Nav, Jumbotron }
