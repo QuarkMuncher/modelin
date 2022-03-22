@@ -16,11 +16,11 @@ export default function Nav() {
       right={0}
       bg="white"
       w="full"
-      align="end"
+      align="flex-end"
       justify="space-between"
     >
       <Image src={Logo} alt="Modelin Logo" h="48px" />
-      <HStack align="end" spacing={4}>
+      <HStack align="flex-end" spacing={4}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="/prices">Services &amp; Prices</NavLink>
