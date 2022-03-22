@@ -11,6 +11,13 @@ export default extendTheme({
     heading: "'Lexend Deca', sans-serif",
     body: "'Mukta', sans-serif"
   },
+  components: {
+    Heading: {
+      baseStyle: {
+        fontWeight: 'normal'
+      }
+    }
+  },
   styles: {
     global: {
       body: {
