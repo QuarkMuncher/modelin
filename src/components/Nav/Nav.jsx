@@ -10,7 +10,12 @@ export default function Nav() {
     <HStack
       py={16}
       px={6}
-      position="sticky"
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      bg="white"
+      w="full"
       align="end"
       justify="space-between"
     >

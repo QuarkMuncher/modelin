@@ -1,12 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
+import { Box } from '@chakra-ui/react'
+import { Nav } from './components'
 import { Home } from './pages'
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Nav />
+      <Box mt={44}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Box>
     </>
   )
 }
