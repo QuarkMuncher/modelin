@@ -4,6 +4,7 @@ import SlidingButton from './SlidingButton'
 import ShortAbout from './ShortAbout'
 import SmallerCenter from './SmallerCenter/SmallerCenter'
 import RecentProjects from './RecentProjects'
+import LikeableSquare from './LikeableSquare'
 
 export {
   Nav,
@@ -11,5 +12,6 @@ export {
   SlidingButton,
   ShortAbout,
   SmallerCenter,
-  RecentProjects
+  RecentProjects,
+  LikeableSquare
 }
