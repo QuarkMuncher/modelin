@@ -18,6 +18,11 @@ export default extendTheme({
       }
     }
   },
+  sizes: {
+    container: {
+      '2xl': '1920px'
+    }
+  },
   styles: {
     global: {
       body: {
