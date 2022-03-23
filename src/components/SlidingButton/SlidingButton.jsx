@@ -4,6 +4,7 @@ import RelativeCenter from './RelativeCenter'
 export default function SlidingButton(props) {
   return (
     <Link
+      display="block"
       position="relative"
       border="1px"
       _hover={{ textDecoration: 'none' }}
