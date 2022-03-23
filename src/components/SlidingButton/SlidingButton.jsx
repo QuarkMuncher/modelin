@@ -16,7 +16,7 @@ export default function SlidingButton(props) {
       <Center py={2} px={10}>
         <Text>{props.children}</Text>
       </Center>
-      <RelativeCenter bg="white" color="black.900" w="full" h="full">
+      <RelativeCenter color="black.900" w="full" h="full">
         <Text>{props.children}</Text>
       </RelativeCenter>
       <RelativeCenter
