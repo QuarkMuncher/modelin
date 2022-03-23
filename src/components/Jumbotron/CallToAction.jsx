@@ -5,7 +5,7 @@ import SlidingButton from '../SlidingButton'
 export default function CallToAction({ title, subtitle, buttonText }) {
   return (
     <Grid
-      templateColumns="14rem 1fr 14rem"
+      templateColumns="15rem 1fr 16rem"
       templateRows="1fr"
       h="full"
       w="full"
@@ -15,7 +15,6 @@ export default function CallToAction({ title, subtitle, buttonText }) {
           align="flex-start"
           justify="space-between"
           bg="white"
-          pl={16}
           py={12}
           pr={8}
           h="full"
