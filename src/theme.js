@@ -5,7 +5,8 @@ export default extendTheme({
     black: {
       400: '#4d4d4d',
       900: '#000000'
-    }
+    },
+    offWhite: '#f3f3f3'
   },
   fonts: {
     heading: "'Lexend Deca', sans-serif",
@@ -18,6 +19,11 @@ export default extendTheme({
       }
     }
   },
+  space: {
+    special: {
+      lg: '242px'
+    }
+  },
   sizes: {
     container: {
       '2xl': '1920px'
@@ -26,7 +32,8 @@ export default extendTheme({
   styles: {
     global: {
       body: {
-        color: 'black.900'
+        color: 'black.900',
+        bg: 'offWhite'
       }
     }
   }
