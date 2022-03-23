@@ -5,7 +5,7 @@ import { Home } from './pages'
 
 function App() {
   return (
-    <Container maxW="container.2xl" p={0}>
+    <Container maxW="container.2xl" p={0} bg="white">
       <Nav />
       <Box mt={44}>
         <Routes>
