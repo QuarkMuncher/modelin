@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Jumbotron } from '../components'
+import { VStack } from '@chakra-ui/react'
+import { Jumbotron, ShortAbout } from '../components'
 import jumboBackground from '../assets/images/LandingPageIMG.jpg'
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
   }, [])
 
   return (
-    <>
+    <VStack spacing={0}>
       {jumbotronData && (
         <Jumbotron
           backgroundSource={jumboBackground}
@@ -23,6 +24,13 @@ export default function Home() {
           buttonText="Portfolio"
         />
       )}
-    </>
+      <ShortAbout
+        header="Offering you a full range of interior and furniture design services"
+        name="Alexander Westham"
+        title="Interior Designer"
+        description="Experience of over 10 years of successful projects on creating unique and modern interior designs all over the world."
+        buttonText="About Me"
+      />
+    </VStack>
   )
 }
