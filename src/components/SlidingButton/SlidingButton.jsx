@@ -10,6 +10,7 @@ export default function SlidingButton(props) {
       _hover={{ textDecoration: 'none' }}
       role="group"
       overflow="hidden"
+      w="max"
       {...props}
     >
       <Center py={2} px={10}>
