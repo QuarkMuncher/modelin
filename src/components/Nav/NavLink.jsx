@@ -1,10 +1,10 @@
 import { Link as RouterLink } from 'react-router-dom'
-import BaseLink from './BaseLink'
+import Link from '../Link'
 
 export default function NavLink({ to, children }) {
   return (
-    <BaseLink fontSize="xl" lineHeight={1} as={RouterLink} to={to}>
+    <Link fontSize="xl" lineHeight={1} as={RouterLink} to={to}>
       {children}
-    </BaseLink>
+    </Link>
   )
 }

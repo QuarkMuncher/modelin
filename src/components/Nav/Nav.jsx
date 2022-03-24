@@ -1,8 +1,8 @@
 import { HStack, Flex, Spacer, Image } from '@chakra-ui/react'
 import { SiHouzz, SiInstagram } from 'react-icons/si'
 import { Link } from 'react-router-dom'
-import IconLink from './IconLink'
 import NavLink from './NavLink'
+import IconLink from '../IconLink'
 import Logo from '../../assets/logo/logo-modelin.svg'
 
 export default function Nav() {
