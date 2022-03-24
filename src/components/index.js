@@ -7,6 +7,8 @@ import RecentProjects from './RecentProjects'
 import LikeableSquare from './LikeableSquare'
 import Services from './Services'
 import AccordionItem from './AccordionItem'
+import Link from './Link'
+import IconLink from './IconLink'
 
 export {
   Nav,
@@ -17,5 +19,7 @@ export {
   RecentProjects,
   LikeableSquare,
   Services,
-  AccordionItem
+  AccordionItem,
+  Link,
+  IconLink
 }
