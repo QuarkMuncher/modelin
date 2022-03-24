@@ -1,1 +1,1 @@
-export { defualt } from './SmallerCenter'
+export { default } from './SmallerCenter'
