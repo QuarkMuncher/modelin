@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { VStack } from '@chakra-ui/react'
-import { Jumbotron, ShortAbout, RecentProjects } from '../components'
+import { Jumbotron, ShortAbout, RecentProjects, Services } from '../components'
 import jumboBackground from '../assets/images/LandingPageIMG.jpg'
 import Recent1 from '../assets/images/PortfolioIMG_01.jpg'
 import Recent2 from '../assets/images/PortfolioIMG_02.jpg'
@@ -9,12 +9,19 @@ import Recent4 from '../assets/images/PortfolioIMG_04.jpg'
 
 export default function Home() {
   const [jumbotronData, setJumbotronData] = useState()
+  const [servicesData, setServicesData] = useState()
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}texts/1`)
       .then(res => res.json())
       .then(res => {
         if (res && res[0].description) setJumbotronData(...res)
+      })
+
+    fetch(`${import.meta.env.VITE_API_URL}texts/2`)
+      .then(res => res.json())
+      .then(res => {
+        if (res && res[0].description) setServicesData(...res)
       })
   }, [])
 
@@ -61,6 +68,29 @@ export default function Home() {
           }
         ]}
       />
+      {servicesData && (
+        <Services
+          header="Services"
+          services={[
+            {
+              title: 'Design projects',
+              description: servicesData.description
+            },
+            {
+              title: 'Set and interior',
+              description: servicesData.description
+            },
+            {
+              title: 'Decoration',
+              description: servicesData.description
+            },
+            {
+              title: 'Supervision',
+              description: servicesData.description
+            }
+          ]}
+        />
+      )}
     </VStack>
   )
 }

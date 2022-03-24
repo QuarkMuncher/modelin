@@ -5,6 +5,8 @@ import ShortAbout from './ShortAbout'
 import SmallerCenter from './SmallerCenter/SmallerCenter'
 import RecentProjects from './RecentProjects'
 import LikeableSquare from './LikeableSquare'
+import Services from './Services'
+import AccordionItem from './AccordionItem'
 
 export {
   Nav,
@@ -13,5 +15,7 @@ export {
   ShortAbout,
   SmallerCenter,
   RecentProjects,
-  LikeableSquare
+  LikeableSquare,
+  Services,
+  AccordionItem
 }
