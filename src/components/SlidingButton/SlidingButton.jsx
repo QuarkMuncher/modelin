@@ -1,7 +1,9 @@
-import { Link, Text, Center } from '@chakra-ui/react'
+import { Link, Text, Center, useTheme } from '@chakra-ui/react'
 import RelativeCenter from './RelativeCenter'
 
 export default function SlidingButton(props) {
+  const theme = useTheme()
+
   return (
     <Link
       display="block"
@@ -21,7 +23,7 @@ export default function SlidingButton(props) {
       </RelativeCenter>
       <RelativeCenter
         _groupHover={{ left: 0 }}
-        transition="all 150ms ease-in"
+        transition={theme.transition.all}
         zIndex="docked"
         bg="black.900"
         color="white"
