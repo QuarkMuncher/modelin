@@ -1,6 +1,9 @@
 import { extendTheme } from '@chakra-ui/react'
 
 export default extendTheme({
+  transition: {
+    all: 'all 150ms ease-in'
+  },
   colors: {
     black: {
       400: '#4d4d4d',
