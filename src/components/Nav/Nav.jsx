@@ -12,6 +12,7 @@ export default function Nav() {
       w="full"
       justify="center"
       position="fixed"
+      zIndex="banner"
       top={0}
       left={0}
       right={0}
