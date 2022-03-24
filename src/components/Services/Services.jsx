@@ -1,6 +1,6 @@
 import { VStack, Heading, Accordion } from '@chakra-ui/react'
 import SmallerCenter from '../SmallerCenter'
-import AccordionItem from '../AccordionItem/AccordionItem'
+import AccordionItem from '../AccordionItem'
 
 export default function Services({ header, services }) {
   return (
