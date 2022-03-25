@@ -1,16 +1,16 @@
 import { Link as BaseLink } from '@chakra-ui/react'
 
-export default function Link(props) {
+export default function Link({ color, children, ...rest }) {
   return (
     <BaseLink
       transition="all 150ms ease-in"
       _hover={{
-        color: 'black.400',
+        color: `${color ? color : 'black.400'}`,
         textDecoration: 'underline'
       }}
-      {...props}
+      {...rest}
     >
-      {props.children}
+      {children}
     </BaseLink>
   )
 }
