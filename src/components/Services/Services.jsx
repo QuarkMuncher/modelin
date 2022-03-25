@@ -5,7 +5,7 @@ import AccordionItem from '../AccordionItem'
 export default function Services({ header, services }) {
   return (
     <SmallerCenter>
-      <VStack align="flex-start" spacing={10}>
+      <VStack align="flex-start" spacing={10} py={14}>
         <Heading as="h1" fontSize="5xl">
           {header}
         </Heading>

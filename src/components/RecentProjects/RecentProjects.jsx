@@ -7,7 +7,7 @@ import SlidingButton from '../SlidingButton'
 export default function RecentProjects({ header, projects, buttonText }) {
   return (
     <SmallerCenter>
-      <VStack align="flex-start" spacing={14} py={28}>
+      <VStack align="flex-start" spacing={14} pt={28} pb={14}>
         <Heading as="h1" fontSize="5xl" transform="translateX(-2px)">
           {header}
         </Heading>
