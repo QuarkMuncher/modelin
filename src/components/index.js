@@ -9,6 +9,7 @@ import Services from './Services'
 import AccordionItem from './AccordionItem'
 import Link from './Link'
 import IconLink from './IconLink'
+import Footer from './Footer'
 
 export {
   Nav,
@@ -21,5 +22,6 @@ export {
   Services,
   AccordionItem,
   Link,
-  IconLink
+  IconLink,
+  Footer
 }

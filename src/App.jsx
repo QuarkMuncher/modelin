@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Box, Container } from '@chakra-ui/react'
-import { Nav } from './components'
-import { Home } from './pages'
+import { Nav, Footer } from './components'
+import { Home, Portfolio } from './pages'
 
 function App() {
   return (
@@ -10,8 +10,10 @@ function App() {
       <Box mt={44}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Routes>
       </Box>
+      <Footer />
     </Container>
   )
 }
