@@ -24,6 +24,7 @@ export default extendTheme({
   },
   space: {
     special: {
+      md: '184px',
       lg: '242px'
     }
   },
